@@ -13,14 +13,14 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/"/>
+    <link rel="canonical" href="http://example.com/tags/数据结构/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
         <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
@@ -35,6 +35,8 @@
     <!--- Page Info-->
     
     <title>
+        
+            Tag: 数据结构 -
         
         Niu&#39;s Blog
     </title>
@@ -93,112 +95,6 @@
 
 
 <main class="page-container">
-
-    
-        $temp-title-fs = hexo-config('home_banner.text_style.title_size')
-$title-font-size = $temp-title-fs ? convert($temp-title-fs) : 2.8rem
-$temp-subtitle-fs = hexo-config('home_banner.text_style.subtitle_size')
-$subtitle-font-size = $temp-subtitle-fs ? convert($temp-subtitle-fs) : 1.4rem
-$temp-line-height = hexo-config('style.first_screen.line_height')
-$line-height = $temp-line-height ? $temp-line-height : 1.2
-$home-banner-icon-size = 1.6rem
-
-@import "../../common/variables"
-
-.home-banner-background {
-  position fixed
-  top 0
-  left 0
-  width 100vw
-  height 100vh
-  background var(--home-banner-img) center center / cover no-repeat
-  background-size cover
-  will-change transform
-  box-sizing border-box
-  transform scale(1.1)
-}
-
-.home-banner-container {
-  font-family "Optima Bold", sans-serif
-  position relative
-  box-sizing border-box
-  width 100%
-  min-height 100vh
-  overflow hidden
-  background var(--home-banner-img) center center / cover no-repeat
-  background-size cover
-  will-change transform
-
-  .content {
-    position relative
-    box-sizing border-box
-    min-height 90vh
-
-    .description {
-      width: 100vw
-      font-weight bold
-      font-size $title-font-size
-      line-height $line-height
-      text-align center
-      color var(--home-banner-text-color)
-
-      p {
-        margin 0
-        opacity 0.9
-        font-family "Optima", sans-serif
-
-        i {
-          font-size: $subtitle-font-size
-          font-style normal
-        }
-
-        span {
-          font-size: $subtitle-font-size * 1.05
-          
-        }
-      }
-
-
-      +redefine-tablet() {
-        font-size $title-font-size * 0.9
-      }
-    }
-
-
-    .social-contacts {
-      position absolute
-      bottom 60px
-      font-size $home-banner-icon-size
-      text-align center
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      box-shadow 0 0 10px 0 rgba(0, 0, 0, 0.5)
-      padding 4px 24px
-      border-radius $redefine-border-radius-medium
-      box-shadow: inset 0 0 2000px var(--home-banner-icons-container-background-color);
-      border 1.5px solid var(--home-banner-icons-container-border-color);
-
-
-      +redefine-tablet() {
-        font-size $home-banner-icon-size * 0.9
-      }
-
-      .social-contact-item {
-        margin-right 20px
-        cursor pointer
-        line-height 2
-        color #FFF
-
-        &:last-child {
-          margin-right 0
-        }
-
-      }
-
-    }
-  }
-}
-
 
     
 
@@ -659,187 +555,47 @@ $logo-image-box-width = 46px
         <div class="main-content-body">
 
             
-                <div class="home-sidebar-container fade-in-down-animation">
-    <div class="sticky-container">
-        
-            
-            <div class="sidebar-content" >
-                <div class="avatar">
-                    <img src="/images/niu.png">
-                </div>
-                <div class="author">
-                    <div class="name">niuniu233w</div>
-                    
-                        <div class="label">Lv1</div>
-                    
-                </div>
-                <div class="statistics">
-                    <a class="item" href="/tags">
-                        <div class="number">1</div>
-                        <div class="label">Tags</div>
-                    </a>
-                    <a class="item" href="/categories">
-                        <div class="number">0</div>
-                        <div class="label">Categories</div>
-                    </a>
-                    <a class="item" href="/archives">
-                        <div class="number">3</div>
-                        <div class="label">Posts</div>
-                    </a>
-                </div>
-            </div>
-        
-
-    </div>
-</div>
-
-            
 
             <div class="main-content">
 
                 
-                    <div class="home-content-container fade-in-down-animation">
-    <ul class="home-article-list">
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/05/25/hello-world/">
-                        Hello World
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        这是我自己的第一篇博客
-Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
-
-More info: Writing 
-Run server1$ hexo server
-
-Mo...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Thu May 25 2023 10:26:42 GMT+0800">
-                
-                    2023-05-25
-                
-            </span>
-        </span>
-        
-        
-    </div>
-
-    <a href="/2023/05/25/hello-world/">Read more<span class="seo-reader-text">Hello World</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+                    <div class="fade-in-down-animation">
+    <div class="tag-container">
+        <div class="tag-name"><i class="fa-solid fa-tag"></i>&nbsp;数据结构
+        </div>
+        <div class="tag-post-list">
+            
+<div class="archive-list-container">
+    
+        <section class="archive-item">
+            <div class="archive-item-header">
+                <span class="archive-year">2023</span>
+                <span class="archive-year-post-count">[1]</span>
+            </div>
+            <ul class="article-list">
+              
+              <li class="article-item" date-is='05-22'>
+                <a href="/2023/05/22/%E7%AE%97%E6%B3%95%E7%9A%84%E6%97%B6%E7%A9%BA%E5%A4%8D%E6%9D%82%E5%BA%A6/">
+                  <span class="article-title">算法的时空复杂度</span>
+                </a>
+              </li>
+              
+            </ul>
+        </section>
+    
 </div>
 
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/05/22/%E7%AE%97%E6%B3%95%E7%9A%84%E6%97%B6%E7%A9%BA%E5%A4%8D%E6%9D%82%E5%BA%A6/">
-                        算法的时空复杂度
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        1. 算法的空间复杂度1.1 程序运行时的内存需求example 11234void test(int n) &#123;    int flag[n];    int i;&#125;
-
-空间复杂度为 O(n)
-example 21234void ...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Mon May 22 2023 18:24:36 GMT+0800">
-                
-                    2023-05-22
-                
-            </span>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
+        </div>
     </div>
 
-    <a href="/2023/05/22/%E7%AE%97%E6%B3%95%E7%9A%84%E6%97%B6%E7%A9%BA%E5%A4%8D%E6%9D%82%E5%BA%A6/">Read more<span class="seo-reader-text">算法的时空复杂度</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/05/17/my-first-blog/">
-                        my first blog
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        简介这是我的第一篇博客文章
-
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Wed May 17 2023 22:46:04 GMT+0800">
-                
-                    2023-05-17
-                
-            </span>
-        </span>
-        
-        
-    </div>
-
-    <a href="/2023/05/17/my-first-blog/">Read more<span class="seo-reader-text">my first blog</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-    </ul>
-
-    <div class="home-paginator">
+    <div class="tag-paginator">
         <div class="paginator">
     <span class="page-number current">1</span>
 </div>
 
     </div>
 </div>
+
 
                 
 
@@ -1166,7 +922,6 @@ example 21234void ...
 
 
 </main>
-
 
 
 

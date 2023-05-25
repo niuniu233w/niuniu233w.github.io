@@ -13,18 +13,25 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/"/>
+    <link rel="canonical" href="http://example.com/2023/05/22/算法的时空复杂度/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+        <meta name="description" content="1. 算法的空间复杂度1.1 程序运行时的内存需求example 11234void test(int n) &amp;#123;    int flag[n];    int i;&amp;#125;  空间复杂度为 O(n) example 21234void test(int n) &amp;#123;    int flag[n][n];    int i;&amp;#125;  空间复杂度为 O(n^2)  可以看出，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="算法的时空复杂度">
+<meta property="og:url" content="http://example.com/2023/05/22/%E7%AE%97%E6%B3%95%E7%9A%84%E6%97%B6%E7%A9%BA%E5%A4%8D%E6%9D%82%E5%BA%A6/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1. 算法的空间复杂度1.1 程序运行时的内存需求example 11234void test(int n) &amp;#123;    int flag[n];    int i;&amp;#125;  空间复杂度为 O(n) example 21234void test(int n) &amp;#123;    int flag[n][n];    int i;&amp;#125;  空间复杂度为 O(n^2)  可以看出，">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:\Users\wwww\AppData\Roaming\Typora\typora-user-images\image-20230525105522894.png">
+<meta property="article:published_time" content="2023-05-22T10:24:36.000Z">
+<meta property="article:modified_time" content="2023-05-25T04:07:45.766Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="数据结构">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:\Users\wwww\AppData\Roaming\Typora\typora-user-images\image-20230525105522894.png">
     
     
     <!--- Icon Part-->
@@ -35,6 +42,8 @@
     <!--- Page Info-->
     
     <title>
+        
+            算法的时空复杂度 -
         
         Niu&#39;s Blog
     </title>
@@ -93,112 +102,6 @@
 
 
 <main class="page-container">
-
-    
-        $temp-title-fs = hexo-config('home_banner.text_style.title_size')
-$title-font-size = $temp-title-fs ? convert($temp-title-fs) : 2.8rem
-$temp-subtitle-fs = hexo-config('home_banner.text_style.subtitle_size')
-$subtitle-font-size = $temp-subtitle-fs ? convert($temp-subtitle-fs) : 1.4rem
-$temp-line-height = hexo-config('style.first_screen.line_height')
-$line-height = $temp-line-height ? $temp-line-height : 1.2
-$home-banner-icon-size = 1.6rem
-
-@import "../../common/variables"
-
-.home-banner-background {
-  position fixed
-  top 0
-  left 0
-  width 100vw
-  height 100vh
-  background var(--home-banner-img) center center / cover no-repeat
-  background-size cover
-  will-change transform
-  box-sizing border-box
-  transform scale(1.1)
-}
-
-.home-banner-container {
-  font-family "Optima Bold", sans-serif
-  position relative
-  box-sizing border-box
-  width 100%
-  min-height 100vh
-  overflow hidden
-  background var(--home-banner-img) center center / cover no-repeat
-  background-size cover
-  will-change transform
-
-  .content {
-    position relative
-    box-sizing border-box
-    min-height 90vh
-
-    .description {
-      width: 100vw
-      font-weight bold
-      font-size $title-font-size
-      line-height $line-height
-      text-align center
-      color var(--home-banner-text-color)
-
-      p {
-        margin 0
-        opacity 0.9
-        font-family "Optima", sans-serif
-
-        i {
-          font-size: $subtitle-font-size
-          font-style normal
-        }
-
-        span {
-          font-size: $subtitle-font-size * 1.05
-          
-        }
-      }
-
-
-      +redefine-tablet() {
-        font-size $title-font-size * 0.9
-      }
-    }
-
-
-    .social-contacts {
-      position absolute
-      bottom 60px
-      font-size $home-banner-icon-size
-      text-align center
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      box-shadow 0 0 10px 0 rgba(0, 0, 0, 0.5)
-      padding 4px 24px
-      border-radius $redefine-border-radius-medium
-      box-shadow: inset 0 0 2000px var(--home-banner-icons-container-background-color);
-      border 1.5px solid var(--home-banner-icons-container-border-color);
-
-
-      +redefine-tablet() {
-        font-size $home-banner-icon-size * 0.9
-      }
-
-      .social-contact-item {
-        margin-right 20px
-        cursor pointer
-        line-height 2
-        color #FFF
-
-        &:last-child {
-          margin-right 0
-        }
-
-      }
-
-    }
-  }
-}
-
 
     
 
@@ -659,187 +562,243 @@ $logo-image-box-width = 46px
         <div class="main-content-body">
 
             
-                <div class="home-sidebar-container fade-in-down-animation">
-    <div class="sticky-container">
-        
-            
-            <div class="sidebar-content" >
-                <div class="avatar">
-                    <img src="/images/niu.png">
-                </div>
-                <div class="author">
-                    <div class="name">niuniu233w</div>
-                    
-                        <div class="label">Lv1</div>
-                    
-                </div>
-                <div class="statistics">
-                    <a class="item" href="/tags">
-                        <div class="number">1</div>
-                        <div class="label">Tags</div>
-                    </a>
-                    <a class="item" href="/categories">
-                        <div class="number">0</div>
-                        <div class="label">Categories</div>
-                    </a>
-                    <a class="item" href="/archives">
-                        <div class="number">3</div>
-                        <div class="label">Posts</div>
-                    </a>
-                </div>
-            </div>
-        
-
-    </div>
-</div>
-
-            
 
             <div class="main-content">
 
                 
-                    <div class="home-content-container fade-in-down-animation">
-    <ul class="home-article-list">
-        
-            <li class="home-article-item">
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
 
-                
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/05/25/hello-world/">
-                        Hello World
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        这是我自己的第一篇博客
-Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
-
-More info: Writing 
-Run server1$ hexo server
-
-Mo...
-                    
+            
+            
+                <div class="article-title">
+                    <h1 class="article-title-regular">算法的时空复杂度</h1>
                 </div>
+            
+                
+            
 
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Thu May 25 2023 10:26:42 GMT+0800">
-                
-                    2023-05-25
-                
-            </span>
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/niu.png">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">niuniu233w</span>
+                            
+                                <span class="author-label">Lv1</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2023-05-22 18:24:36</span>
+        <span class="mobile">2023-05-22 18:24</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2023-05-25 12:07:45</span>
+            <span class="mobile">2023-05-25 12:07</span>
+            <span class="hover-info">Updated</span>
         </span>
-        
-        
-    </div>
+    
 
-    <a href="/2023/05/25/hello-world/">Read more<span class="seo-reader-text">Hello World</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
 </div>
 
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content markdown-body">
+                <h1 id="1-算法的空间复杂度"><a href="#1-算法的空间复杂度" class="headerlink" title="1. 算法的空间复杂度"></a>1. 算法的空间复杂度</h1><h2 id="1-1-程序运行时的内存需求"><a href="#1-1-程序运行时的内存需求" class="headerlink" title="1.1 程序运行时的内存需求"></a>1.1 程序运行时的内存需求</h2><h3 id="example-1"><a href="#example-1" class="headerlink" title="example 1"></a>example 1</h3><div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">test</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">    <span class="type">int</span> flag[n];</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>空间复杂度为 O(n)</p>
+<h3 id="example-2"><a href="#example-2" class="headerlink" title="example 2"></a>example 2</h3><div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">test</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">    <span class="type">int</span> flag[n][n];</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>空间复杂度为 O(n^2) </p>
+<p>可以看出，一个算法的空间复杂度主要取决于与问题规模相关的变量</p>
+<h3 id="example-3"><a href="#example-3" class="headerlink" title="example 3"></a>example 3</h3><div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">test</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">    <span class="type">int</span> flag[n][n];</span><br><span class="line">    <span class="type">int</span> other[n];</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>对于上述代码，S(n) &#x3D; O(n^2) + O(n) + O(1) &#x3D; O(n^2)</p>
+<p>有多个与问题规模的空间变量时，应取影响最大的一项</p>
+<h2 id="1-2-递归函数带来的内存开销"><a href="#1-2-递归函数带来的内存开销" class="headerlink" title="1.2 递归函数带来的内存开销"></a>1.2 递归函数带来的内存开销</h2><h3 id="example-1-1"><a href="#example-1-1" class="headerlink" title="example 1"></a>example 1</h3><div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">loveU</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">    <span class="type">int</span> a,b,c;</span><br><span class="line">    <span class="keyword">if</span> (n &gt; <span class="number">1</span>) &#123;</span><br><span class="line">        loveU(n - <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;I love U %d\n&quot;</span>,n);</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">        loveU(<span class="number">5</span>);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>运行结果为 </p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:\Users\wwww\AppData\Roaming\Typora\typora-user-images\image-20230525105522894.png"
+                      alt="image-20230525105522894"
+                ></p>
+<p>S(n) &#x3D; O(n), 空间复杂度 &#x3D; 递归调用的深度</p>
+
+            </div>
+
+            
+                <div class="post-copyright-info">
+                    <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> 算法的时空复杂度</li>
+        <li><strong>Author:</strong> niuniu233w</li>
+        <li><strong>Created at:</strong> 2023-05-22 18:24:36</li>
+        
+            <li>
+                <strong>Updated at:</strong> 2023-05-25 12:07:45
             </li>
         
-            <li class="home-article-item">
+        <li>
+            <strong>Link:</strong> https://github.com/niuniu233w/niuniu233w.github.io.git/2023/05/22/算法的时空复杂度/
+        </li>
+        <li>
+            <strong>License:</strong> This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>.
+        </li>
+    </ul>
+</div>
 
-                
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/05/22/%E7%AE%97%E6%B3%95%E7%9A%84%E6%97%B6%E7%A9%BA%E5%A4%8D%E6%9D%82%E5%BA%A6/">
-                        算法的时空复杂度
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        1. 算法的空间复杂度1.1 程序运行时的内存需求example 11234void test(int n) &#123;    int flag[n];    int i;&#125;
-
-空间复杂度为 O(n)
-example 21234void ...
-                    
                 </div>
+            
 
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Mon May 22 2023 18:24:36 GMT+0800">
-                
-                    2023-05-22
-                
-            </span>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
+            
+                <ul class="post-tags-box">
                     
-                        <li>
-                            
-                            <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>&nbsp;
+                        <li class="tag-item">
+                            <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">#数据结构</a>&nbsp;
                         </li>
                     
                 </ul>
-            </span>
-        
-    </div>
+            
 
-    <a href="/2023/05/22/%E7%AE%97%E6%B3%95%E7%9A%84%E6%97%B6%E7%A9%BA%E5%A4%8D%E6%9D%82%E5%BA%A6/">Read more<span class="seo-reader-text">算法的时空复杂度</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
+            
 
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/05/17/my-first-blog/">
-                        my first blog
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
+            
+                <div class="article-nav">
                     
-                        简介这是我的第一篇博客文章
-
+                        <div class="article-prev">
+                            <a class="prev"
+                            rel="prev"
+                            href="/2023/05/25/hello-world/"
+                            >
+                                <span class="left arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </span>
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">Hello World</span>
+                                    <span class="post-nav-item">Prev posts</span>
+                                </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                            rel="next"
+                            href="/2023/05/17/my-first-blog/"
+                            >
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">my first blog</span>
+                                    <span class="post-nav-item">Next posts</span>
+                                </span>
+                                <span class="right arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
                     
                 </div>
+            
 
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Wed May 17 2023 22:46:04 GMT+0800">
-                
-                    2023-05-17
-                
-            </span>
-        </span>
+
+            
+                <div class="comment-container">
+                    if (hexo-config('comment.enable') == true && hexo-config('comment.system') != "") {
+  if (hexo-config('comment.system') == "waline") {
+    @require "./waline.styl"
+
+  } else if (hexo-config('comment.system') == "gitalk") {
+    @require "./gitalk.styl"
+
+  } else if (hexo-config('comment.system') == "twikoo") {
+    @require "./twikoo.styl"
+  }
+}
+
+.comments-container {
+  display inline-block
+  margin-top $spacing-unit
+  width 100%
+
+  #comment-anchor {
+    width 100%
+    height 10px
+  }
+
+  .comment-area-title {
+    width 100%
+    margin 10px 0
+    font-size 1.38rem
+    color var(--default-text-color)
+    font-family "Noto Sans", "Noto Sans SC",sans-serif
+    font-weight bold
+
+    i {
+      color var(--default-text-color)
+    }
+
+    +redefine-tablet() {
+      margin 5px 0
+      font-size 1.2rem
+    }
+  }
+
+}
+
+                </div>
+            
+        </div>
+
         
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title">算法的时空复杂度</div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E7%AE%97%E6%B3%95%E7%9A%84%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6"><span class="nav-text">1. 算法的空间复杂度</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E6%97%B6%E7%9A%84%E5%86%85%E5%AD%98%E9%9C%80%E6%B1%82"><span class="nav-text">1.1 程序运行时的内存需求</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#example-1"><span class="nav-text">example 1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#example-2"><span class="nav-text">example 2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#example-3"><span class="nav-text">example 3</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-%E9%80%92%E5%BD%92%E5%87%BD%E6%95%B0%E5%B8%A6%E6%9D%A5%E7%9A%84%E5%86%85%E5%AD%98%E5%BC%80%E9%94%80"><span class="nav-text">1.2 递归函数带来的内存开销</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#example-1-1"><span class="nav-text">example 1</span></a></li></ol></li></ol></li></ol>
+
+    </div>
+</div>
+            </div>
         
     </div>
-
-    <a href="/2023/05/17/my-first-blog/">Read more<span class="seo-reader-text">my first blog</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
-            </li>
-        
-    </ul>
-
-    <div class="home-paginator">
-        <div class="paginator">
-    <span class="page-number current">1</span>
-</div>
-
-    </div>
-</div>
 
                 
 
@@ -1111,6 +1070,27 @@ example 21234void ...
     </div>
 
     
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
 
     <div class="right-side-tools-container">
         <div class="side-tools-container">
@@ -1170,7 +1150,6 @@ example 21234void ...
 
 
 
-
 <script src="/js/utils.js"></script>
 
 <script src="/js/main.js"></script>
@@ -1223,6 +1202,16 @@ example 21234void ...
 
 
 <div class="post-scripts pjax">
+    
+        
+<script src="/js/tools/tocToggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/layouts/toc.js"></script>
+
+<script src="/js/plugins/tabs.js"></script>
+
     
 </div>
 
